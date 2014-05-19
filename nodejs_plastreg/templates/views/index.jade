@@ -6,10 +6,9 @@ block content
 			h2 Welcome to Plast Registration System
 			if user.canAccessKeystone
 				p
-					a(href='/keystone/signin').btn.btn-lg.btn-primary Open the Admin UI
-			else if user.canAccessPlastreg
-				p
-					Plastreg stuff goes here!
+					a(href='/keystone/').btn.btn-lg.btn-primary Open the Admin UI
+			if user.canAccessPlastReg
+				p Plastreg stuff goes here!
 		else
 			p You are not logged in.
 			p
